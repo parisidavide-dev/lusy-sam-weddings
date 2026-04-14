@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href="assets/css/stylesheet.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <div class="quote">
+      Non desideriamo beni materiali, ma ricordi da portare nel cuore.<br /> Se volete aiutarci a realizzare il nostro
+      viaggio
+      dei sogni, ecco come potete fare.
+    </div>
+
+    <div>
+      <h3><strong>IBAN</strong>: IT57L0538720500000004217522</h3>
+      <button id="copyIban" class="btn-copy">
+        <i class="fa-regular fa-copy"></i>
+      </button>
+    </div>
+
+    <div>
+      <h3><strong>Beneficiari</strong>: <span>Colombo Lucia, Schiavone Samuele</span></h3>
+      <button id="copyUser" class="btn-copy">
+        <i class="fa-regular fa-copy"></i>
+      </button>
+    </div>
+  </main>
+  <footer></footer>
+
+  <script>
+    const copybtn = document.getElementById(`copyIban`);
+    copybtn.addEventListener(`click`, e => {
+      navigator.clipboard.writeText(`IT57L0538720500000004217522`);
+      alert(`IBAN copiato`);
+    });
+
+    const copyuser = document.getElementById(`copyUser`);
+    copyuser.addEventListener(`click`, e => {
+      navigator.clipboard.writeText(`Colombo Lucia,schiavone Samuele`);
+      alert(`Beneficiari copiati`);
+    });
+  </script>
+</body>
+
+</html>
