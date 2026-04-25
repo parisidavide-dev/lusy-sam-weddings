@@ -68,6 +68,10 @@ body {
     font-style: italic;
 }
 
+.text-s {
+    font-size: small;
+}
+
 .btn-copy {
     font-size: 32px;
     background: transparent;
@@ -81,7 +85,7 @@ body {
     margin-right: 36px;
 }
 
-.scroll-text {
+.text-align-c {
     text-align: center;
 }
 
@@ -121,5 +125,5 @@ img.window {
 }
 
 .info-group div{
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
