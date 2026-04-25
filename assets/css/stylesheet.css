@@ -40,12 +40,20 @@ body {
     display: flex;
 }
 
+.fullw {
+    width: 100%;
+}
+
 .hide-of {
     overflow: hidden;
 }
 
 .justify-center {
     justify-content: center;
+}
+
+.text-align-l {
+    text-align: left;
 }
 
 .title-logo-img {
@@ -66,6 +74,11 @@ body {
     border: 2px solid var(--text-color);
     border-radius: 8px;
     padding: 8px 12px;
+}
+
+.lr-margin-36 {
+    margin-left: 36px;
+    margin-right: 36px;
 }
 
 .scroll-text {
@@ -105,4 +118,8 @@ img.window {
     -webkit-mask-size: 66.66% 100%;
     mask-repeat: no-repeat;
     -webkit-mask-repeat: no-repeat;
+}
+
+.info-group div{
+    margin-bottom: 5px;
 }
