@@ -27,6 +27,7 @@ body {
     font-size: 20px;
     font-family: 'Typey';
     text-align: center;
+    overflow-x: hidden;
 
     /* Sfondo */
     background-image: url('../images/bg.png');
@@ -36,7 +37,7 @@ body {
 }
 
 .fullw-flex {
-    width: 100vw;
+    width: 100%;
     display: flex;
 }
 
@@ -56,12 +57,22 @@ body {
     text-align: left;
 }
 
-.title-logo-img {
+/* .title-logo-img {
     width: 100%;
     height: auto;
     margin-top: 50px;
     margin-left: 32px;
     margin-right: 32px;
+} */
+
+.title-logo-img {
+    max-width: calc(100vw - 64px); /* 32px di margine per lato */
+    width: auto;
+    height: auto;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .quote {
@@ -102,7 +113,7 @@ body {
     margin-right: 46px;
 }
 
-img.window {
+/* img.window {
     width: 150%;
     mask-image: linear-gradient(
         to right,
@@ -118,10 +129,16 @@ img.window {
         black 95%,
         transparent 100%
     );
-    mask-size: 66.66% 100%; /* 100/150 = 66.66%, equivale al 100vw */
+    mask-size: 66.66% 100%;
     -webkit-mask-size: 66.66% 100%;
     mask-repeat: no-repeat;
     -webkit-mask-repeat: no-repeat;
+} */
+
+img.window {
+    width: 120%;
+    margin-left: -10%;
+    display: block;
 }
 
 .info-group div{
